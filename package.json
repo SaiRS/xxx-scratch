@@ -102,8 +102,7 @@
     "jest:test": "cross-env NODE_ENV=test jest --coverage",
     "jest:test:watch": "cross-env NODE_ENV=test jest --watchAll"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "engines": {
     "node": ">=10.0.0"
   }

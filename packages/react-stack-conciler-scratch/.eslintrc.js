@@ -1,4 +1,5 @@
 module.exports = {
+  root: true,
   extends: ['plugin:xxx-eslint/recommended'],
   overrides: [
     {
@@ -7,9 +8,6 @@ module.exports = {
     },
   ],
   settings: {
-    polyfills: [
-      // 解决Object is not iterable的error
-      'Promise',
-    ],
+    polyfills: [],
   },
 };
