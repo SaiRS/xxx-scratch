@@ -1,15 +1,19 @@
 module.exports = {
-  extends: ['plugin:xxx-eslint/recommended'],
-  overrides: [
-    {
-      files: ['*.ts', '*.tsx'],
-      ...require('eslint-plugin-xxx-eslint').configs.typescript,
-    },
+  extends: [
+    'react-app',
+    'plugin:compat/recommended',
+    'plugin:prettier/recommended',
+    'prettier/react',
+    'prettier/standard',
   ],
+  plugins: ['react-hooks'],
+  rules: {
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+  },
   settings: {
-    polyfills: [
-      // 解决Object is not iterable的error
-      'Promise',
-    ],
+    react: {
+      version: 'detect',
+    },
   },
 };
