@@ -5,7 +5,6 @@ function selectSort(list) {
 
   for (let i = 0; i < sortedList.length; i++) {
     let minIndex = i;
-    // 稳定性：当我从i开始时，是稳定的，而从i+1开始时，则不稳定
     for (let j = i; j < sortedList.length; j++) {
       if (sortedList[j] < sortedList[minIndex]) {
         minIndex = j;
