@@ -1,6 +1,6 @@
 const tapable = require('tapable');
 
-// 关心订阅的回调的返回值
+// 关心订阅的回调的返回值，返回值用来控制循环次数
 // 对于返回值不为undefined的tap，会重复执行从第一个tap到当前tap的整个过程
 
 // 参数['arg1', 'arg2', 'arg3']定义了订阅回调函数的接口
